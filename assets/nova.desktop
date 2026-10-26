@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Nova
+GenericName=Presentation Editor
+Comment=Presentation editor with WYSIWYG editing and cosmic UI
+Exec=nova %F
+Icon=nova
+Terminal=false
+Categories=Office;Presentation;Graphics;
+Keywords=presentation;slides;powerpoint;nova;
+MimeType=application/x-nova;
+StartupNotify=true
+StartupWMClass=nova

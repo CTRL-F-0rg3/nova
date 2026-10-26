@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#150a14"/>
+      <stop offset="1" stop-color="#000000"/>
+    </linearGradient>
+    <radialGradient id="nova" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.2" stop-color="#ff5eb0"/>
+      <stop offset="0.5" stop-color="#ff2d95"/>
+      <stop offset="1" stop-color="#ff2d95" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="24" ry="24"
+        fill="url(#bg)" stroke="#ff2d95" stroke-width="1.5" stroke-opacity="0.5"/>
+  <g filter="url(#glow)">
+    <circle cx="64" cy="64" r="30" fill="url(#nova)" opacity="0.4"/>
+    <circle cx="64" cy="64" r="8" fill="#ffffff"/>
+    <path d="M 64 20 L 68 58 L 106 64 L 68 70 L 64 108 L 60 70 L 22 64 L 60 58 Z"
+          fill="#ff2d95" opacity="0.9"/>
+    <path d="M 64 34 L 66 60 L 92 64 L 66 68 L 64 94 L 62 68 L 36 64 L 62 60 Z"
+          fill="#ffffff" opacity="0.85"/>
+  </g>
+  <circle cx="100" cy="28" r="1.5" fill="#00ff88" opacity="0.8"/>
+  <circle cx="24" cy="100" r="1.2" fill="#ff2d95" opacity="0.7"/>
+  <circle cx="104" cy="100" r="1" fill="#ffffff" opacity="0.5"/>
+  <circle cx="24" cy="24" r="1" fill="#ffffff" opacity="0.4"/>
+</svg>
